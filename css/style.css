@@ -33,13 +33,13 @@ header {
     box-shadow: 10px 10px 10px rgba(30, 70, 133, 0.2);
     width: 15%;
     margin: 3% 3% 1.5% 3%;
-    transition: 2s;
+    transition: 1s;
 }
 
 #foto:hover {
     width: 17%;
 
-    box-shadow: 0px 0px 20px rgba(30, 70, 133, 0.2);
+    box-shadow: 0px 0px 20px rgba(30, 70, 133, 0.5);
 }
 
 #nome {
@@ -63,11 +63,11 @@ a.btn {
     border-radius: 5px;
     cursor: pointer;
 
-    padding: 1%;
+    padding: 1.5%;
     text-decoration: none;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 130%;
     text-transform: uppercase;
     color: var(--corB);
 
@@ -82,7 +82,7 @@ a.btn {
 }
 
 i {
-    font-size: 150%;
+    font-size: 130%;
     color: var(--corB);
     padding-left: 20px;
     transition: .7s;
@@ -98,6 +98,16 @@ a.btn:hover {
     color: var(--corD);
 }
 
+a.halfA {
+    width: 18%;
+    margin-right: -3%;
+}
+
+a.halfB {
+    width: 18%;
+    margin-left: -1%;
+}
+
 h2 {
     text-align: center;
     font-family: 'Barlow Condensed', sans-serif;
@@ -111,7 +121,21 @@ h2 {
 
 @media screen and (max-width:850px) {
 
+    #foto {
+        border-radius: 50%;
+        border: 2px solid var(--corD);
+        box-shadow: 3px 3px 10px rgba(30, 70, 133, 0.2);
+        width: 15%;
+        margin: 3% 3% 1.5% 3%;
+        transition: 1s;
+    }
     
+    #foto:hover {
+        width: 30%;
+    
+        box-shadow: 0px 0px 20px rgba(30, 70, 133, 0.5);
+    }
+
     section {
         display: flex;
         padding: 0% 1% 2% 1%;
@@ -122,8 +146,8 @@ h2 {
     a.btn {
         padding: 3%;
         width: 60%;
-        margin: 10px;
+        margin: 6px;
 
-        font-size: 1rem;
+        font-size: 100%;
     }
 }
